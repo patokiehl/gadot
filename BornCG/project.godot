@@ -11,11 +11,17 @@ config_version=4
 [application]
 
 config/name="BornCG"
+run/main_scene="res://Level.tscn"
 config/icon="res://icon.png"
 
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[layer_names]
+
+3d_physics/layer_1="Floor"
+3d_physics/layer_2="Blocks"
 
 [physics]
 

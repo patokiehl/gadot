@@ -7,12 +7,20 @@
 [node name="Node" type="Node" parent="."]
 
 [node name="Lpiece" parent="Node" instance=ExtResource( 1 )]
+collision_layer = 2
+collision_mask = 0
 
 [node name="Lpiece2" parent="Node" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.08066, 0, 0 )
+collision_layer = 2
+collision_mask = 0
 
 [node name="Lpiece4" parent="Node" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.03238 )
+collision_layer = 2
+collision_mask = 0
 
 [node name="Lpiece3" parent="Node" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0312, 0, 0 )
+collision_layer = 2
+collision_mask = 0

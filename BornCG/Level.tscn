@@ -43,12 +43,13 @@ mesh = SubResource( 1 )
 [node name="CollisionShape" type="CollisionShape" parent="Box"]
 shape = SubResource( 2 )
 
-[node name="StaticBody" type="StaticBody" parent="."]
+[node name="Floor" type="StaticBody" parent="."]
+collision_mask = 3
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Floor"]
 shape = SubResource( 3 )
 
-[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+[node name="MeshInstance" type="MeshInstance" parent="Floor"]
 material_override = SubResource( 9 )
 mesh = SubResource( 4 )
 skin = SubResource( 6 )
@@ -80,3 +81,6 @@ visible = false
 
 [node name="Spatial" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.74727, 0 )
+visible = false
+
+[node name="Spatial2" parent="." instance=ExtResource( 2 )]
