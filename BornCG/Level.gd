@@ -1,12 +1,6 @@
 extends Spatial
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-export (PackedScene) var Lpiece
-const piece = preload("res://assets/Piece_id_1.tscn")
+#const piece = load("res://assets/Piece_id_1.tscn")
 var pieces = []
 var counter = 0
 
@@ -18,7 +12,12 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed("ui_left"):
 		randomize()
+		var position = Vector3(randi() % 4,0,randi() % 4)
 		var new_shape = pieces[(randi() % len(pieces))].instance()#piece.instance()
+		#pieces[0].
+		#var piece = load("res://assets/Piece_id_1.tscn")
+		#new_shape.
+		#new_shape.set_position(position)
 		#print(pieces)
 		#fnew_shape.
 		add_child(new_shape)
